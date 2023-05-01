@@ -72,7 +72,7 @@ pct create $CTID /var/lib/vz/template/cache/$SELECTED_DISTRO \
     --memory $RAM \
     --password "$ROOTPASSWD" \
     --storage local-lvm \
-    --net0 name=eth0,bridge=vmbr0,ip='192.168.1.128/24',gw='192.168.1.1' \
+    --net0 name=eth0,bridge=vmbr0,ip=dhcp \
     --rootfs local-lvm:$CTDISK \
     --features nesting=1 \
     --unprivileged 1 \

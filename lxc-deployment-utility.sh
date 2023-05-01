@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 clear
 # Lookup available distribution templates
 DISTRO_LIST=($(ls /var/lib/vz/template/cache ))
@@ -52,15 +52,17 @@ esac
 
 # Print the selected container size variables
 echo "Selected container size: cores = $CORES, RAM = $RAM"
-
+## CHECKPOINT > script breaks if user enters lowercase size. 
 # Prompt the user for additional parameters
 read -p "Container Name : " CTNAME
 read -p "Container ID : " CTID
 read -p "Container Disk Size : " CTDISK
 read -sp "Container Root Password : " ROOTPASSWD
 
-#checkpoint
-echo $CTNAME, $CTID,$CORES,$RAM,$SELECTED_DISTRO, $CTDISK
+## CHECKPOINT > prints selections before building
+echo User Parameters : $CTNAME,$CTID,$CORES,$RAM,$CTDISK,$SELECTED_DISTRO
+echo -e "\n ######### press ENTER to build\n"
+read
 
 # Create container
 pct create $CTID /var/lib/vz/template/cache/$SELECTED_DISTRO \

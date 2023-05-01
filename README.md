@@ -3,7 +3,7 @@ This utility helps create LXC containers with minimal user input.
 
 When script runs. It'll search for available distribution templates locaed in the /var/lib/vz/template/cache directory in Proxmox VE. 
 
-The utility prompts then the user to select the distribution file to be used.
+The utility prompts then the user to select the distribution file to be used from a list.
 
 The user is prompted to select from three diferent predefined container sizes.
 
@@ -14,8 +14,10 @@ The user is prompted to select from three diferent predefined container sizes.
 Finally, it prompts the user for general information to complete the build.
 
 ## To do:
-- Clean up script
+- Clean up menu options
 - Prompts using dialog
+- Review for improvements
+- running .gif
 
 
 

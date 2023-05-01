@@ -60,8 +60,8 @@ read -p "Container Disk Size : " CTDISK
 read -sp "Container Root Password : " ROOTPASSWD
 
 ## CHECKPOINT > prints selections before building
-echo User Parameters : $CTNAME,$CTID,$CORES,$RAM,$CTDISK,$SELECTED_DISTRO
-echo -e "\n ######### press ENTER to build\n"
+echo "Container Parameters : $CTNAME,$CTID,$CORES,$RAM,$CTDISK,$SELECTED_DISTRO"
+echo -e "\n        press ENTER to build\n"
 read
 
 # Create container

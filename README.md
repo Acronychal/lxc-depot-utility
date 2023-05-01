@@ -5,7 +5,7 @@ When script runs. It'll search for available distribution templates locaed in th
 
 The utility prompts then the user to select the distribution file to be used.
 
-The user is prompted to select from three diferent predined container sizes.
+The user is prompted to select from three diferent predefined container sizes.
 
 - SM = Small LXC container with 2 cores and 2 gb of RAM. 
 - MD = Medium LXC container with 4 cores and 4 gb of RAM.

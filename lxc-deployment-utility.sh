@@ -60,7 +60,7 @@ read -p "Container Disk Size : " CTDISK
 read -sp "Container Root Password : " ROOTPASSWD
 
 #checkpoint
-echo $CTNAME, $CTID,$CORES,$RAM,$SELECTED_DISTRO, $CTDISK,
+echo $CTNAME, $CTID,$CORES,$RAM,$SELECTED_DISTRO, $CTDISK
 
 # Create container
 pct create $CTID /var/lib/vz/template/cache/$SELECTED_DISTRO \

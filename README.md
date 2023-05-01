@@ -17,7 +17,4 @@ Finally, it prompts the user for general information to complete the build.
 - Clean up menu options
 - Prompts using dialog
 - Review for improvements
-- running .gif
-
-
-
+- Add running .gif to README 
